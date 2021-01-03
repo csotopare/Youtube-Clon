@@ -16,13 +16,14 @@
       margin-right: 10px;
       font-size: 20px;
     }
+    a {
+      color: white;
+    }
   }
   .social-login--github {
     background-color: $black;
-    color: white;
   }
   .social-login--facebook {
     background-color: #3a5998;
-    color: white;
   }
 }
