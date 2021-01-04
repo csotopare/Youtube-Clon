@@ -4,7 +4,7 @@ import dotenv from 'dotenv';
 
 dotenv.config();
 
-import './models/Videos';
+import './models/Video';
 import './models/Comment';
 import './models/User';
 

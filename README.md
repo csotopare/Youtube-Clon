@@ -4,12 +4,12 @@ Cloning Youtube with JavaScript and NodeJs
 
 ## Pages: 
 
-- [ ] Home
+- [x] Home
 - [x] Join
 - [x] Login
 - [x] Search
-- [ ] User Detail
-- [ ] Edit Profile
+- [x] User Detail
+- [x] Edit Profile
 - [ ] Change Password
 - [ ] Upload
 - [ ] Video Detail

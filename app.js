@@ -2,27 +2,26 @@ import express from 'express';
 import morgan from 'morgan';
 import helmet from 'helmet';
 import cookieParser from 'cookie-parser';
-import MongoStore from 'connect-mongo';
-import mongoose from 'mongoose';
-import passport from 'passport';
 import bodyParser from 'body-parser';
+import passport from 'passport';
+import mongoose from 'mongoose';
 import session from 'express-session';
+import MongoStore from 'connect-mongo';
 import { localsMiddleware } from './middlewares';
+import routes from './routes';
 import userRouter from './routers/userRouter';
 import videoRouter from './routers/videoRouter';
 import globalRouter from './routers/globalRouter';
-import routes from './routes';
-import dotenv from 'dotenv';
+
 import './passport';
 
-dotenv.config();
-
 const app = express();
+
 const CokieStore = MongoStore(session);
 
 app.use(helmet());
 app.set('view engine', 'pug');
-app.use('/uploads', express.static('uploads'));
+app.use('/uploads', express.static('./uploads'));
 app.use('/static', express.static('static'));
 
 app.use(cookieParser());
